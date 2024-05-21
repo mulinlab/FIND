@@ -114,8 +114,6 @@ clf.fit(
     virtual_batch_size=256
 )
 
-# To get final results you may need to use a mapping for classes 
-# as you are allowed to use targets like ["yes", "no", "maybe", "I don't know"]
 preds_mapper = { idx : class_name for idx, class_name in enumerate(clf.classes_)}
 print(f"BEST VALID SCORE FOR {Monm} : {clf.best_cost}")
 
