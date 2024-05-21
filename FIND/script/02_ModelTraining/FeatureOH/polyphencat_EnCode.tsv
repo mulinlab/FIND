@@ -1,0 +1,6 @@
+ClassName	CodeNumb
+UD	0
+probably_damaging	1
+benign	2
+possibly_damaging	3
+unknown	4
