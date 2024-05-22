@@ -18,9 +18,9 @@ Despite advances in annotating and interpreting human genetic variants, existing
 
 - **Genome build GRCh38 / hg38**
 
-​	All possible SNVs of GRCh38 / hg38 [Download]()
+  All possible SNVs of GRCh38 / hg38 [Download]()
 
-​	All possible SNVs of GRCh38 / hg38 incl. all annotations [Download]()
+  All possible SNVs of GRCh38 / hg38 incl. all annotations [Download]()
 
 
 
