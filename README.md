@@ -45,8 +45,6 @@ We have expanded the conventional binary partitioning of all human genome varian
 
 1. Annotated training dataset by using VarNote or other way.
 
-   Annotation
-
    ```bash
    ## Examples of VarNote annotations
    java -jar /path to/VarNote-1.2.0.jar AnnotationConfig -I ./config/BigAnno_SNV.config
