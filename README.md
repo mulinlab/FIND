@@ -24,9 +24,15 @@ Despite advances in annotating and interpreting human genetic variants, existing
 
 - **Genome build GRCh38 / hg38**
 
+<<<<<<< HEAD
   All possible SNVs of GRCh38 / hg38 [Download]() (492G)
 
   All possible SNVs of GRCh38 / hg38 incl. all annotations [Download]() (1.3T)
+=======
+  All possible SNVs of GRCh38 / hg38 [Download]()
+
+  All possible SNVs of GRCh38 / hg38 incl. all annotations [Download]()
+>>>>>>> 399fac80a32f6c49a5ea2afb35b6f8a710040f2c
 
 
 
