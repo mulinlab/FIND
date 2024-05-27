@@ -72,7 +72,7 @@ We have expanded the conventional binary partitioning of all human genome varian
 
 - Recalculated FIND raw scores by the trained FIND model.
 
-  Please refer to the following method for [feature annotation](2. Feature annotation and processing.).
+  Please refer to the following method for [feature annotation](# 2. Feature annotation and processing.).
 
   ```bash
   cd ./script/02_ModelTraining
