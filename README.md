@@ -100,7 +100,7 @@ We have expanded the conventional binary partitioning of all human genome varian
 
 - python 3.10
 - [TabNet](https://github.com/dreamquark-ai/tabnet)
-- scikit-learn
+- [scikit-learn](https://scikit-learn.org/stable/)
 - [VarNote](http://www.mulinlab.org/varnote/index.html)
 
 ### Procedures
