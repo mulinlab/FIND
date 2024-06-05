@@ -87,7 +87,7 @@ We have expanded the conventional binary partitioning of all human genome varian
 
 - Recalculated FIND raw scores by the trained FIND model.
 
-  Please refer to the following method for [feature annotation](# Procedures).
+  Please refer to the following method for [feature annotation](#Procedures).
 
   ```bash
   cd ./script/02_ModelTraining
@@ -109,7 +109,7 @@ We have expanded the conventional binary partitioning of all human genome varian
 
    The FIND is based on the differences in fitness among genetic variants from different evolutionary processes in modern human genome. Specifically, FIND distinguishes between genetic variants that derived allele have undergone fixed/nearly fiexed (labelled **F**), intermediate selection (labelled **I**), neutral (labelled **N**), and deleterious/*de novo* (labelled **D**). We constructed a training dataset comprising approximately 2 million variants, ensuring a balanced representation across four distinct categories.
 
-   > The FIND training data set is [FIND_Training_Data.tsv](./FIND/train_dataset), and the corresponding relationship of data labels is F:0, I:1, N:2, D:3.
+   > The FIND training data set is [FIND_Training_Data.tsv](./train_dataset), and the corresponding relationship of data labels is F:0, I:1, N:2, D:3.
 
 2. Feature annotation and processing.
 
