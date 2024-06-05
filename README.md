@@ -75,9 +75,7 @@ We have expanded the conventional binary partitioning of all human genome varian
   - Access the [VannoPortal](http://www.mulinlab.org/vportal/index.html) website for variant score.
 
   - Access remote database with VarNote. 
-
-    The header information of FIND score file can be find [here](./config/FINDScore.header).
-
+    The header information of FIND score file can be found [here](./config/FINDScore.header) (or for more [details](./Reference_information/FIND_score_information.xlsx)).
     ```bash
     java -jar VarNote.jar RandomAccess \
     -Q 1:959100-959200 \
@@ -142,8 +140,7 @@ We have expanded the conventional binary partitioning of all human genome varian
      ```
 
    - Query the interested variant annotations by accessing the remote database.
-    The header information of FIND annotation file can be find [here](./config/BigAnno.header).
-
+    The header information of FIND annotation file can be found [here](./config/BigAnno.header) (or for more [details](./Reference_information/Feature_information.xlsx)).
      ```
      java -jar VarNote.jar RandomAccess \
      -Q 1:959100-959200 \
