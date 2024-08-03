@@ -36,7 +36,7 @@ We have expanded the conventional binary partitioning of all human genome varian
 
 ### Get the FIND scores
 
-- Get all pre-calculated FIND scores in [hg19](http://mulinlab.l2.ttut.cc/FIND/Data_Score/hg19/) (494G)/[hg38 ](http://mulinlab.l2.ttut.cc/FINDer/Data_Score/hg38/)(492G). 
+- Get all pre-calculated FIND scores in [hg19](http://mulinlab.l2.ttut.cc/FINDer/Data_Score/hg19/) (494G)/[hg38 ](http://mulinlab.l2.ttut.cc/FINDer/Data_Score/hg38/)(492G). 
 
   > Suitable for annotation of a large number of variants.
 
