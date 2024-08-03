@@ -16,15 +16,15 @@ Despite advances in annotating and interpreting human genetic variants, existing
 
 - **Genome build GRCh37 / hg19**
 
-  All possible SNVs of GRCh37 / hg19 [Download](http://mulinlab.l2.ttut.cc/FIND/Data_Score/hg19/) (494G)
+  All possible SNVs of GRCh37 / hg19 [Download](http://mulinlab.l2.ttut.cc/FINDer/Data_Score/hg19/) (494G)
 
-  All possible SNVs of GRCh37 / hg19 incl. all annotations [Download](http://mulinlab.l2.ttut.cc/FIND/Data_Anno/hg19/) (1.3T)
+  All possible SNVs of GRCh37 / hg19 incl. all annotations [Download](http://mulinlab.l2.ttut.cc/FINDer/Data_Anno/hg19/) (1.3T)
 
 - **Genome build GRCh38 / hg38**
 
-  All possible SNVs of GRCh38 / hg38 [Download](http://mulinlab.l2.ttut.cc/FIND/Data_Score/hg38/) (492G)
+  All possible SNVs of GRCh38 / hg38 [Download](http://mulinlab.l2.ttut.cc/FINDer/Data_Score/hg38/) (492G)
 
-  All possible SNVs of GRCh38 / hg38 incl. all annotations [Download](http://mulinlab.l2.ttut.cc/FIND/Data_Anno/hg38/) (1.3T)
+  All possible SNVs of GRCh38 / hg38 incl. all annotations [Download](http://mulinlab.l2.ttut.cc/FINDer/Data_Anno/hg38/) (1.3T)
 
 
 
@@ -36,7 +36,7 @@ We have expanded the conventional binary partitioning of all human genome varian
 
 ### Get the FIND scores
 
-- Get all pre-calculated FIND scores in [hg19](http://mulinlab.l2.ttut.cc/FIND/Data_Score/hg19/) (494G)/[hg38 ](http://mulinlab.l2.ttut.cc/FIND/Data_Score/hg38/)(492G). 
+- Get all pre-calculated FIND scores in [hg19](http://mulinlab.l2.ttut.cc/FIND/Data_Score/hg19/) (494G)/[hg38 ](http://mulinlab.l2.ttut.cc/FINDer/Data_Score/hg38/)(492G). 
 
   > Suitable for annotation of a large number of variants.
 
@@ -44,14 +44,14 @@ We have expanded the conventional binary partitioning of all human genome varian
 
     ```bash
     # hg19
-    wget -c http://mulinlab.l2.ttut.cc/FIND/Data_Score/hg19/FIND_variants_ALL.hg19.scores.tsv.gz
-    wget -c http://mulinlab.l2.ttut.cc/FIND/Data_Score/hg19/FIND_variants_ALL.hg19.scores.tsv.gz.vanno
-    wget -c http://mulinlab.l2.ttut.cc/FIND/Data_Score/hg19/FIND_variants_ALL.hg19.scores.tsv.gz.vanno.vi
+    wget -c http://mulinlab.l2.ttut.cc/FINDer/Data_Score/hg19/FIND_variants_ALL.hg19.scores.tsv.gz
+    wget -c http://mulinlab.l2.ttut.cc/FINDer/Data_Score/hg19/FIND_variants_ALL.hg19.scores.tsv.gz.vanno
+    wget -c http://mulinlab.l2.ttut.cc/FINDer/Data_Score/hg19/FIND_variants_ALL.hg19.scores.tsv.gz.vanno.vi
     
     # hg38
-    wget -c http://mulinlab.l2.ttut.cc/FIND/Data_Score/hg38/FIND_variants_ALL.hg38.scores.tsv.gz
-    wget -c http://mulinlab.l2.ttut.cc/FIND/Data_Score/hg38/FIND_variants_ALL.hg38.scores.tsv.gz.vanno
-    wget -c http://mulinlab.l2.ttut.cc/FIND/Data_Score/hg38/FIND_variants_ALL.hg38.scores.tsv.gz.vanno.vi
+    wget -c http://mulinlab.l2.ttut.cc/FINDer/Data_Score/hg38/FIND_variants_ALL.hg38.scores.tsv.gz
+    wget -c http://mulinlab.l2.ttut.cc/FINDer/Data_Score/hg38/FIND_variants_ALL.hg38.scores.tsv.gz.vanno
+    wget -c http://mulinlab.l2.ttut.cc/FINDer/Data_Score/hg38/FIND_variants_ALL.hg38.scores.tsv.gz.vanno.vi
     ```
 
   - Get the FIND prediction scores by using [VarNote](http://www.mulinlab.org/varnote/index.html).
@@ -80,7 +80,7 @@ We have expanded the conventional binary partitioning of all human genome varian
     java -jar VarNote.jar RandomAccess \
     -Q 1:959100-959200 \
     -D:db,tag=Scores \
-    http://mulinlab.l2.ttut.cc/FIND/Data_Anno/hg38/FIND_variant_ALL.hg19.Scores.tsv.gz
+    http://mulinlab.l2.ttut.cc/FINDer/Data_Anno/hg38/FIND_variant_ALL.hg19.Scores.tsv.gz
     ```
 
 - Recalculated FIND raw scores by the trained FIND model.
@@ -113,18 +113,18 @@ We have expanded the conventional binary partitioning of all human genome varian
 
    To more comprehensively capture the evolutionary patterns and adaptive selection mechanisms of human variations, especially those located in non-coding regions, we systematically computed and integrated 289 base-wise variant annotation features across the whole genome, with a significant percentage achieving allele-specific resolution.
 
-   - Download annotation file in [hg19](http://mulinlab.l2.ttut.cc/FIND/Data_Anno/hg19/) (1.2T)/[hg38](http://mulinlab.l2.ttut.cc/FIND/Data_Anno/hg38/) (1.2T).
+   - Download annotation file in [hg19](http://mulinlab.l2.ttut.cc/FINDer/Data_Anno/hg19/) (1.2T)/[hg38](http://mulinlab.l2.ttut.cc/FINDer/Data_Anno/hg38/) (1.2T).
 
      ```bash
      # hg19
-     wget -c http://mulinlab.l2.ttut.cc/FIND/Data_Anno/hg19/FIND_variant_ALL.hg19.Annotation.tsv.gz
-     wget -c http://mulinlab.l2.ttut.cc/FIND/Data_Anno/hg19/FIND_variant_ALL.hg19.Annotation.tsv.gz.vanno
-     wget -c http://mulinlab.l2.ttut.cc/FIND/Data_Anno/hg19/FIND_variant_ALL.hg19.Annotation.tsv.gz.vanno.vi
+     wget -c http://mulinlab.l2.ttut.cc/FINDer/Data_Anno/hg19/FIND_variant_ALL.hg19.Annotation.tsv.gz
+     wget -c http://mulinlab.l2.ttut.cc/FINDer/Data_Anno/hg19/FIND_variant_ALL.hg19.Annotation.tsv.gz.vanno
+     wget -c http://mulinlab.l2.ttut.cc/FINDer/Data_Anno/hg19/FIND_variant_ALL.hg19.Annotation.tsv.gz.vanno.vi
      
      # hg38
-     wget -c http://mulinlab.l2.ttut.cc/FIND/Data_Anno/hg38/FIND_variant_ALL.hg38.Annotation.tsv.gz
-     wget -c http://mulinlab.l2.ttut.cc/FIND/Data_Anno/hg38/FIND_variant_ALL.hg38.Annotation.tsv.gz.vanno
-     wget -c http://mulinlab.l2.ttut.cc/FIND/Data_Anno/hg38/FIND_variant_ALL.hg38.Annotation.tsv.gz.vanno.vi
+     wget -c http://mulinlab.l2.ttut.cc/FINDer/Data_Anno/hg38/FIND_variant_ALL.hg38.Annotation.tsv.gz
+     wget -c http://mulinlab.l2.ttut.cc/FINDer/Data_Anno/hg38/FIND_variant_ALL.hg38.Annotation.tsv.gz.vanno
+     wget -c http://mulinlab.l2.ttut.cc/FINDer/Data_Anno/hg38/FIND_variant_ALL.hg38.Annotation.tsv.gz.vanno.vi
      ```
 
    - Annotated training dataset by using VarNote or other way.
@@ -145,7 +145,7 @@ We have expanded the conventional binary partitioning of all human genome varian
      java -jar VarNote.jar RandomAccess \
      -Q 1:959100-959200 \
      -D:db,tag=Scores \
-     http://mulinlab.l2.ttut.cc/FIND/Data_Anno/hg19/FIND_variant_ALL.hg19.Annotation.tsv.gz
+     http://mulinlab.l2.ttut.cc/FINDer/Data_Anno/hg19/FIND_variant_ALL.hg19.Annotation.tsv.gz
      ```
 
    - Feature processing.
