@@ -1,8 +1,8 @@
 # FIND
 
-Despite advances in annotating and interpreting human genetic variants, existing methods to distinguish pathogenic from neutral variants still inadequately capture the nuanced impact of genetic variants on fitness and disease susceptibility. To address this, we introduced FIND, a method that enhances resolution in differentiating trait-modulating alleles from pathogenic or neutral ones by stratifying genetic variants into refined categories based on selection pressures and derived allele frequency (DAF) . We have expanded the conventional binary partitioning of all human genome variants into four nuanced categories, utilizing the dimensions of natural selection and derived allele frequency spectrum (as shown below), including: 1) Fixed/Nearly Fixed (**F**) category; 2) Intermediate Selection (**I**) category; 3) Neutral (**N**) category; 4) Deleteriousness (**D**) category.
+Despite advances in annotating and interpreting human genetic variants, existing methods to distinguish pathogenic from neutral variants still inadequately capture the nuanced impact of genetic variants on fitness and disease susceptibility. To address this, we introduced FIND, a method that enhances resolution in differentiating trait-modulating alleles from pathogenic or neutral ones by stratifying genetic variants into refined categories based on fitness spectrnum and derived allele frequency (DAF) . We have expanded the conventional binary partitioning of all human genome variants into four nuanced categories, utilizing the dimensions of natural selection and derived allele frequency spectrum (as shown below), including: 1) Fixed/Nearly Fixed (**F**) category; 2) Intermediate/Trait-moludating (**I**) category; 3) Neutral (**N**) category; 4) Deleteriousness (**D**) category.
 
-![image-20240526124047898](./figure/image-20240526124047898.png)
+![image-20240526124047898](./figure/pic.png)
 
 - FIND improved resolution for identifying favored allele with trait-modulating effect.
 

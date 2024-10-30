@@ -37,8 +37,13 @@ trackData = {
     'type': str,
     'default': 'ignore'
     },
-'pos': {
-    'description': 'Position (1-based)',
+'begin': {
+    'description': 'Position of the begin(0-based)',
+    'type': int,
+    'default': 'ignore'
+    },
+'end': {
+    'description': 'Position  of the end(0-based)',
     'type': int,
     'default': 'ignore'
     },
@@ -62,6 +67,11 @@ trackData = {
     },
 'id': {
     'description': 'data posID info',
+    'type': str,
+    'default': 'ignore'
+    },
+'gene': {
+    'description': 'The closest gene',
     'type': str,
     'default': 'ignore'
     },
