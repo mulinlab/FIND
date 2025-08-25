@@ -32,7 +32,10 @@ Despite advances in annotating and interpreting human genetic variants, existing
 
 ### Score interpretation and prioritization
 
-We have expanded the conventional binary partitioning of all human genome variants into four nuanced categories, utilizing the dimensions of natural selection and derived allele frequency (DAF) spectrum. Therefore, for each SNV, FIND will provide the probability that the variant is predicted to be in four categories, named: FIND_F, FIND_I, FIND_N, FIND_D. The raw scores reported by FIND can be used to determining the categories of variant. Similar to CADD C-scores and it's phred-like scores (**PHRED score**), we recommend to use phred-like scores (FIND_F_PHRED, FIND_I_PHRED, FIND_N_PHRED, FIND_D_PHRED) for the likely causal variant prioritization (for each FIND categories).
+We have expanded the conventional binary partitioning of all human genome variants into four nuanced categories, utilizing the dimensions of natural selection and derived allele frequency (DAF) spectrum. For each input variant, the FIND model generates a vector of four probability scores, corresponding to the predicted likelihood of the variant belonging to each of the four FIND categories, with the probabilities sum to one. The final categorical assignment is determined by the class associated with the highest probability (FIND_F, FIND_I, FIND_N, FIND_D). 
+
+However, a simple categorical label provides limited utility for variant prioritization, particularly given the broad functional spectra encompassed by each class. To enable finer discrimination among variants within the same predicted category, we further derived phred-like scores (**PHRED score**, −10*log10(rank/total)) for each variant based on the genome-wide empirical distribution of predicted probabilities within each class (FIND_F_PHRED, FIND_I_PHRED, FIND_N_PHRED, FIND_D_PHRED). This approach enables ranking of variants within their assigned category, thereby facilitating the prioritization of high-confidence candidates. Thus, while the probabilistic classification identifies the most likely functional class, the PHRED score provides a continuous measure of prediction reliability, enhancing resolution for downstream prioritization.
+
 
 ### Get the FIND scores
 
